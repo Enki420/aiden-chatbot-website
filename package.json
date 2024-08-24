@@ -1,0 +1,24 @@
+{
+  "name": "aiden-chatbot-website",
+  "version": "1.0.0",
+  "description": "A web-based interface for the AIDEN Tactical AI chatbot, designed to support decision-making and operational efficiency in government contracting projects.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/aiden-chatbot-website.git"
+  },
+  "keywords": [
+    "chatbot",
+    "AI",
+    "government",
+    "decision-making",
+    "web"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {}
+}
