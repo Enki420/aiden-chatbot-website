@@ -1,0 +1,37 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.search-container {
+  margin: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f1f1f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
