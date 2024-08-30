@@ -1,0 +1,39 @@
+---
+import { marked } from 'marked';
+import { type CardsSection } from 'types';
+import Card from '@components/Card.astro';
+import Section from '@components/Section.astro';
+
+interface Props extends CardsSection {
+    'data-sb-field-path'?: string;
+}
+
+const { heading, body, items, columns, ...rest } = Astro.props;
+---
+
+<Section {...rest} class="text-center">
+    {
+        heading && (
+            <h2 class="text-2xl font-black sm:text-4xl text-balance" data-sb-field-path=".heading">
+                {heading}
+            </h2>
+        )
+    }
+    {body && <div class:list={['mx-auto', heading && 'mt-4', 'max-w-prose markdown']} data-sb-field-path=".body" set:html={marked.parse(body)} />}
+    {
+        items && items?.length > 0 && (
+            <div
+                class:list={[
+                    (heading || body) && 'mt-8',
+                    'grid gap-8 justify-items-center',
+                    columns === 'one' ? undefined : columns === 'two' ? 'md:grid-cols-2' : 'md:grid-cols-3'
+                ]}
+                data-sb-field-path=".items"
+            >
+                {items?.map((item, idx) => (
+                    <Card {...item} data-sb-field-path={`.${idx}`} class="flex-1" />
+                ))}
+            </div>
+        )
+    }
+</Section>

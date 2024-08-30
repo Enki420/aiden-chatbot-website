@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense Contracting Consulting Firm</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Defense Consulting</a>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+                <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="home" class="bg-cover bg-center h-screen" style="background-image: url('assets/defense-bg.jpg');">
+        <div class="container mx-auto flex justify-center items-center h-full">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold">Specializing in USACE & NAVFAC Engineering and Construction Projects</h1>
+                <p class="text-xl mt-4">Providing expert consulting and subcontracting services.</p>
+                <a href="#services" class="mt-6 inline-block bg-yellow-400 text-gray-900 py-2 px-4 rounded-full hover:bg-yellow-500">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center">Our Services</h2>
+            <p class="text-center text-gray-400 mt-4">Expertise in Pre-Construction Services, CPM Scheduling, and more.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Key Competencies</h3>
+                    <p>Quality, Safety, Cost Control, Schedule Development & Implementation</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Project CPM Scheduling</h3>
+                    <p>Microsoft Project & Primavera 6</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Environmental Submittals</h3>
+                    <p>Comprehensive environmental compliance services</p>
+                </div>
+                <!-- Add more services as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center">Project Portfolio</h2>
+            <p class="text-center text-gray-400 mt-4">Showcasing our large-scale technical engineering projects.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">McGhee Tyson AFB</h3>
+                    <p>Contract Value: $10M | Description: Airfield and infrastructure improvements.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Martin Marietta Ammunition Plant</h3>
+                    <p>Contract Value: $8M | Description: Modernization of ammunition production facilities.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Lake Barkley Powerhouse</h3>
+                    <p>Contract Value: $12M | Description: Structural and mechanical renovations.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Contact Us</h2>
+            <p class="text-gray-400 mt-4">Get in touch for consulting and subcontracting services.</p>
+
+            <form action="#" method="post" class="mt-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" name="name" placeholder="Your Name" class="p-4 bg-gray-700 rounded-lg">
+                    <input type="email" name="email" placeholder="Your Email" class="p-4 bg-gray-700 rounded-lg">
+                </div>
+                <textarea name="message" rows="5" placeholder="Your Message" class="p-4 bg-gray-700 rounded-lg mt-4 w-full"></textarea>
+                <button type="submit" class="mt-4 bg-yellow-400 text-gray-900 py-2 px-4 rounded-full hover:bg-yellow-500">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chatbot Interface -->
+    <section id="chatbot" class="fixed bottom-0 right-0 m-6">
+        <div id="chatbot-container" class="bg-gray-800 text-white p-4 rounded-lg shadow-lg">
+            <h3 class="font-bold text-lg mb-2">Chat with AIDEN</h3>
+            <div id="chatbot-messages" class="h-48 overflow-y-scroll mb-2"></div>
+            <input type="text" id="chatbot-input" placeholder="Type your message..." class="w-full p-2 bg-gray-700 rounded-lg">
+        </div>
+    </section>
+
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
